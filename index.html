@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bogachuk Email Templates — Portfolio</title>
+  <meta name="description" content="Email template portfolio: table-based HTML, desktop/mobile responsive layout, iGaming campaigns.">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <div class="shell topbar">
+    <div class="lang-switch" role="group" data-i18n-aria="langLabel" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="uk" aria-pressed="false">UA</button>
+      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+    </div>
+  </div>
+
+  <header class="shell hero">
+    <p class="hero-kicker" data-i18n="heroKicker">Email Marketing · iGaming Portfolio</p>
+    <h1 class="brand">Bogachuk<br><span>Email Studio</span></h1>
+    <p class="hero-lead" data-i18n="heroLead">
+      A set of production-ready email templates built with table layout, desktop/mobile adaptation, merge tags, and a pre-send checklist — for promo, trigger, and reactivation campaigns.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#workspace" data-i18n="ctaView">Browse templates</a>
+      <a class="btn btn-ghost" href="#preflight" data-i18n="ctaReport">Pre-send report</a>
+    </div>
+  </header>
+
+  <main class="shell layout" id="workspace">
+    <aside class="panel sidebar">
+      <h2 data-i18n="campaigns">Campaigns</h2>
+      <ul class="template-list" id="template-list"></ul>
+      <div class="meta-block">
+        <p><strong style="color:var(--cream)" data-i18n="activeLabel">Active:</strong></p>
+        <p id="active-title">—</p>
+        <p id="active-meta"><code>—</code></p>
+        <p style="margin-top:0.85rem" data-i18n="technique">Stack: HTML tables · inline CSS · media queries · MSO hints · preheader · 18+ footer</p>
+      </div>
+    </aside>
+
+    <section class="panel workspace">
+      <div class="toolbar">
+        <div class="view-toggle" role="group" data-i18n-aria="viewToggleLabel" aria-label="Viewport toggle">
+          <button type="button" data-view="desktop" class="active">Desktop</button>
+          <button type="button" data-view="mobile">Mobile</button>
+        </div>
+        <div class="toolbar-actions">
+          <button type="button" class="btn btn-ghost" id="btn-generator" data-i18n="btnGenerator">Merge tags</button>
+          <button type="button" class="btn btn-ghost" id="btn-copy" data-i18n="btnCopy">Copy HTML</button>
+          <button type="button" class="btn btn-ghost" id="btn-download" data-i18n="btnDownload">Download</button>
+          <button type="button" class="btn btn-primary" id="btn-raw" data-i18n="btnRaw">Open raw</button>
+        </div>
+      </div>
+
+      <div class="preview-frame-wrap" id="preview-frame-wrap">
+        <iframe id="preview-frame" class="preview-frame" data-i18n-title="previewTitle" title="Email preview"></iframe>
+      </div>
+
+      <section class="preflight" id="preflight" aria-labelledby="preflight-title">
+        <div class="preflight-head">
+          <div>
+            <p class="preflight-kicker" data-i18n="preflightKicker">Mass-mailing status</p>
+            <h2 id="preflight-title" data-i18n="preflightTitle">Pre-send report · ready to send</h2>
+          </div>
+          <span class="status-pill status-pill-ok" data-i18n="statusPill">All checks passed</span>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3 data-i18n="qaTitle">QA before mass mailing</h3>
+            <ul class="check-list">
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa1">Links, UTMs, and merge tags validated</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa2">Subject + preheader checked in clients</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa3">Image-blocked / alt texts OK</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa4">Unsubscribe and preferences in footer</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa5">18+, T&amp;Cs, and jurisdiction notes added</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="qa6">Test send: Gmail, Outlook, Apple Mail</span></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3 data-i18n="delivTitle">Deliverability — configured</h3>
+            <ul class="check-list">
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="deliv1">SPF for sending domain confirmed</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="deliv2">DKIM signing enabled</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="deliv3">DMARC policy active (monitor → enforce)</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="deliv4">Marketing subdomain separated</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="deliv5">Warm-up plan and clean list applied</span></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3 data-i18n="releaseTitle">Campaigns in release</h3>
+            <ul class="check-list">
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release1">Promo: free spins, weekend reload</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release2">Triggers: welcome, VIP, cashback</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release3">Win-back: dormant reactivation</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release4">Info: new slot + tournament</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release5">Seasonal: 12 Days of Bonuses</span></li>
+              <li><span class="check-mark" aria-hidden="true">✓</span> <span data-i18n="release6">A/B variants (subject / CTA) prepared</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="shell footer-note">
+    <p data-i18n="footerNote">Bogachuk Email Studio · portfolio templates · not affiliated with a real operator.</p>
+    <p class="footer-links">
+      <a href="https://yarilab.github.io/email_marketing_igaming_portfolio/" target="_blank" rel="noopener noreferrer" data-i18n="footerDemo">Live preview</a>
+      <span class="footer-sep" aria-hidden="true">·</span>
+      <a href="https://github.com/YariLab/email_marketing_igaming_portfolio" target="_blank" rel="noopener noreferrer" data-i18n="footerRepo">Code</a>
+    </p>
+  </footer>
+
+  <div class="modal-backdrop" id="generator-modal" role="dialog" aria-modal="true" aria-labelledby="generator-title">
+    <div class="modal">
+      <h2 id="generator-title" data-i18n="modalTitle">Merge tag generator</h2>
+      <p data-i18n="modalLead">Set values — the preview updates. Placeholders like {{first_name}} stay in HTML until applied.</p>
+      <form id="generator-form" class="form-grid">
+        <div class="field">
+          <label for="merge-first_name">first_name</label>
+          <input id="merge-first_name" name="first_name" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-bonus_amount">bonus_amount</label>
+          <input id="merge-bonus_amount" name="bonus_amount" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-cashback_amount">cashback_amount</label>
+          <input id="merge-cashback_amount" name="cashback_amount" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-holiday_day">holiday_day</label>
+          <input id="merge-holiday_day" name="holiday_day" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-min_deposit">min_deposit</label>
+          <input id="merge-min_deposit" name="min_deposit" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-spin_value">spin_value</label>
+          <input id="merge-spin_value" name="spin_value" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-promo_code">promo_code</label>
+          <input id="merge-promo_code" name="promo_code" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-vip_tier">vip_tier</label>
+          <input id="merge-vip_tier" name="vip_tier" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-cashback_rate">cashback_rate</label>
+          <input id="merge-cashback_rate" name="cashback_rate" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-wagering">wagering</label>
+          <input id="merge-wagering" name="wagering" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-expiry_date">expiry_date</label>
+          <input id="merge-expiry_date" name="expiry_date" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-cta_url">cta_url</label>
+          <input id="merge-cta_url" name="cta_url" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-unsubscribe_url">unsubscribe_url</label>
+          <input id="merge-unsubscribe_url" name="unsubscribe_url" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="merge-preferences_url">preferences_url</label>
+          <input id="merge-preferences_url" name="preferences_url" autocomplete="off">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="btn-close-modal" data-i18n="btnCancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" data-i18n="btnApply">Apply</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
